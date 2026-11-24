@@ -1,0 +1,15 @@
+
+langgraph
+langgraph-checkpoint-sqlite
+langchain-core
+langchain-ollama
+langchain-chroma
+langchain-text-splitters
+python-dotenv
+
+fastapi
+uvicorn
+pydantic
+
+streamlit
+requests
