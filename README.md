@@ -1,6 +1,6 @@
 
 
-\# OpsDesk Agent
+# OpsDesk Agent
 
 
 
@@ -8,7 +8,7 @@
 
 
 
-\## 1. 项目介绍
+## 1. 项目介绍
 
 
 
@@ -20,27 +20,27 @@ OpsDesk Agent 是一个面向企业 IT 服务场景的 AI Agent 演示项目。
 
 
 
-\- 企业 IT 知识库问答
+- 企业 IT 知识库问答
 
-\- 本地大模型语义理解
+- 本地大模型语义理解
 
-\- RAG 检索增强生成与文档来源展示
+- RAG 检索增强生成与文档来源展示
 
-\- 基于 Tool Calling 的结构化工单规划
+- 基于 Tool Calling 的结构化工单规划
 
-\- LangGraph 工作流编排
+- LangGraph 工作流编排
 
-\- Human-in-the-loop 人工审批
+- Human-in-the-loop 人工审批
 
-\- SQLite 工单持久化
+- SQLite 工单持久化
 
-\- 工作流检查点恢复
+- 工作流检查点恢复
 
-\- 工单创建幂等性保护
+- 工单创建幂等性保护
 
-\- FastAPI 接口服务
+- FastAPI 接口服务
 
-\- Streamlit 可视化界面
+- Streamlit 可视化界面
 
 
 
@@ -48,7 +48,7 @@ OpsDesk Agent 是一个面向企业 IT 服务场景的 AI Agent 演示项目。
 
 
 
-\## 2. 核心技术栈
+## 2. 核心技术栈
 
 
 
@@ -78,7 +78,7 @@ OpsDesk Agent 是一个面向企业 IT 服务场景的 AI Agent 演示项目。
 
 
 
-\## 3. 系统架构
+## 3. 系统架构
 
 
 
@@ -154,11 +154,11 @@ LangGraph 的工作流状态可以通过 SQLite Checkpointer 保存，以支持�
 
 
 
-\## 4. 功能介绍
+## 4. 功能介绍
 
 
 
-\### 4.1 企业知识问答
+### 4.1 企业知识问答
 
 
 
@@ -182,7 +182,7 @@ LangGraph 的工作流状态可以通过 SQLite Checkpointer 保存，以支持�
 
 
 
-\### 4.2 智能工单创建
+### 4.2 智能工单创建
 
 
 
@@ -194,9 +194,9 @@ LangGraph 的工作流状态可以通过 SQLite Checkpointer 保存，以支持�
 
 
 
-\- rule：通过规则构建工单草稿
+- rule：通过规则构建工单草稿
 
-\- llm：使用 Qwen3 生成结构化工单草稿
+- llm：使用 Qwen3 生成结构化工单草稿
 
 
 
@@ -204,7 +204,7 @@ LangGraph 的工作流状态可以通过 SQLite Checkpointer 保存，以支持�
 
 
 
-\### 4.3 人工审批
+### 4.3 人工审批
 
 
 
@@ -216,15 +216,15 @@ LangGraph 的工作流状态可以通过 SQLite Checkpointer 保存，以支持�
 
 
 
-\- 查询待审批工作流
+- 查询待审批工作流
 
-\- 查看工单草稿
+- 查看工单草稿
 
-\- 批准工单
+- 批准工单
 
-\- 拒绝工单
+- 拒绝工单
 
-\- 查询正式数据库工单
+- 查询正式数据库工单
 
 
 
@@ -236,7 +236,7 @@ LangGraph 的工作流状态可以通过 SQLite Checkpointer 保存，以支持�
 
 
 
-\### 4.4 持久化和幂等性
+### 4.4 持久化和幂等性
 
 
 
@@ -252,7 +252,7 @@ LangGraph 的工作流状态可以通过 SQLite Checkpointer 保存，以支持�
 
 
 
-\### 4.5 API 身份验证
+### 4.5 API 身份验证
 
 
 
@@ -272,27 +272,27 @@ LangGraph 的工作流状态可以通过 SQLite Checkpointer 保存，以支持�
 
 
 
-\## 5. 本地运行
+## 5. 本地运行
 
 
 
-\### 环境要求
+### 环境要求
 
 
 
-\- Windows
+- Windows
 
-\- Python 虚拟环境
+- Python 虚拟环境
 
-\- Ollama
+- Ollama
 
-\- Qwen3:8b
+- Qwen3:8b
 
-\- BGE-M3
+- BGE-M3
 
 
 
-\### 配置
+### 配置
 
 
 
@@ -308,7 +308,7 @@ LangGraph 的工作流状态可以通过 SQLite Checkpointer 保存，以支持�
 
 
 
-\### 启动
+### 启动
 
 
 
@@ -346,7 +346,7 @@ LangGraph 的工作流状态可以通过 SQLite Checkpointer 保存，以支持�
 
 
 
-\## 6. 主要 API
+## 6. 主要 API
 
 
 
@@ -372,7 +372,7 @@ LangGraph 的工作流状态可以通过 SQLite Checkpointer 保存，以支持�
 
 
 
-\## 7. 测试
+## 7. 测试
 
 
 
@@ -380,21 +380,21 @@ LangGraph 的工作流状态可以通过 SQLite Checkpointer 保存，以支持�
 
 
 
-\- RAG 检索与问答
+- RAG 检索与问答
 
-\- 工单 SQLite 存储
+- 工单 SQLite 存储
 
-\- 幂等性处理
+- 幂等性处理
 
-\- LangGraph 人工审批
+- LangGraph 人工审批
 
-\- SQLite Checkpoint 跨进程恢复
+- SQLite Checkpoint 跨进程恢复
 
-\- FastAPI 身份验证
+- FastAPI 身份验证
 
-\- 真实 Qwen3 Tool Calling
+- 真实 Qwen3 Tool Calling
 
-\- HTTP 端到端工单流程
+- HTTP 端到端工单流程
 
 
 
@@ -426,7 +426,7 @@ LangGraph 的工作流状态可以通过 SQLite Checkpointer 保存，以支持�
 
 
 
-\## 8. 当前限制
+## 8. 当前限制
 
 
 
@@ -438,41 +438,41 @@ LangGraph 的工作流状态可以通过 SQLite Checkpointer 保存，以支持�
 
 
 
-\- API Key 不对应真实员工身份
+- API Key 不对应真实员工身份
 
-\- 缺少完整 RBAC 与审计日志
+- 缺少完整 RBAC 与审计日志
 
-\- 管理员通过 thread\_id 查询工作流
+- 管理员通过 thread\_id 查询工作流
 
-\- 知识问答引用尚未实现自动事实核验
+- 知识问答引用尚未实现自动事实核验
 
-\- 前端聊天记录主要依赖 Streamlit Session State
+- 前端聊天记录主要依赖 Streamlit Session State
 
-\- 不保证浏览器会话结束后保留聊天历史
+- 不保证浏览器会话结束后保留聊天历史
 
-\- 长时间运行的问答尚未实现独立后台任务管理
-
-
-
-\## 9. 后续改进
+- 长时间运行的问答尚未实现独立后台任务管理
 
 
 
-\- 增加真正的用户身份认证和角色权限
-
-\- 实现待审批工单列表
-
-\- 完善异步任务与状态查询
-
-\- 增加 RAG 检索与回答质量评估
-
-\- 完善日志、监控与异常处理
-
-\- 增加自动化部署能力
+## 9. 后续改进
 
 
 
-\## 10. 项目定位
+- 增加真正的用户身份认证和角色权限
+
+- 实现待审批工单列表
+
+- 完善异步任务与状态查询
+
+- 增加 RAG 检索与回答质量评估
+
+- 完善日志、监控与异常处理
+
+- 增加自动化部署能力
+
+
+
+## 10. 项目定位
 
 
 
@@ -480,14 +480,14 @@ LangGraph 的工作流状态可以通过 SQLite Checkpointer 保存，以支持�
 
 
 
-1\. Agent 工作流编排
+1. Agent 工作流编排
 
-2\. RAG 检索增强生成
+2. RAG 检索增强生成
 
-3\. Tool Calling 与结构化业务操作
+3. Tool Calling 与结构化业务操作
 
-4\. 人工审批和权限边界
+4. 人工审批和权限边界
 
-5\. 状态持久化与幂等性
+5. 状态持久化与幂等性
 
-6\. 前后端集成与测试
+6. 前后端集成与测试
